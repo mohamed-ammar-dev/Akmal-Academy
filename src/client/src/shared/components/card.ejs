@@ -1,0 +1,27 @@
+<div class="col-md-4">
+  <!-- start card -->
+  <div class="card text-center h-100" style="background-color: #ffffff">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img
+        crossorigin="anonymous"
+        src="<%=data.picture%>"
+        class="card-img-top"
+      />
+      <a href="#!">
+        <div
+          class="mask"
+          style="background-color: rgba(251, 251, 251, 0.15)"
+        ></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"><%=data.title%></h5>
+    </div>
+    <div class="card-footer text-muted">
+      <a href="<%=button.href%>/<%=data.id%>"
+        ><button class="Btn_Style"><%=button.name%></button></a
+      >
+    </div>
+  </div>
+  <!-- End card -->
+</div>
