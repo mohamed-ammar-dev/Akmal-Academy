@@ -6,7 +6,8 @@ import { login } from "./services/login";
 import { register } from "./services/register";
 
 const isAuth = getCookie("isAuth");
-if (isAuth) window.location.href = "/playlists/me";
+
+if (isAuth == "true") window.location.href = "/playlists/me";
 
 const registerButton = async () => {
   const email = document.getElementById("registerEmail")! as HTMLInputElement;

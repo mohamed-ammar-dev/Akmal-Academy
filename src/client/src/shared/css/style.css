@@ -507,12 +507,28 @@ input[type="color"]:focus,
     border-bottom-left-radius: 57px;
 }
 
-.loading-omd {
+.acca {
     background-color: #f0f0f0 !important;
-    background-image: url(https://wagacademy.net/wp-content/themes/wag/assets/images/loader.png);
+    background-image: url(https://ams03pap001files.storage.live.com/y4mJt-DmEjzufBLay-_BUoIWOmOEgr1ACgG17mtQQlG4IgylAcgq94eqebWfbrAwLHoF3GYi2Aeb2KXX5wcjgpgFjxsExbZAYVEeeU7N8Vuvp7yAMu4Z2YPrpAq45yHrlG3SwHM9g_6Gcq9r_BnRUFBGpMSq6fRKZrGgbbhx36c6wmt2Q9MyF5drw8LQqlAo9BJcDqp3El1maPfLg-j35zHmA/1.png?psid=1&width=621&height=621&cropMode=center);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 25%;
+    background-size: 100%;
+}
+
+.cma {
+    background-color: #f0f0f0 !important;
+    background-image: url(https://wagacademy.net/wp-content/uploads/2021/10/m226qAAoRjK5eD7dI3Gb_cma-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.ifrs {
+    background-color: #f0f0f0 !important;
+    background-image: url(https://wagacademy.net/wp-content/uploads/2021/10/bi-ifrs.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90%;
 }
 
 .img-block-asp-om {
