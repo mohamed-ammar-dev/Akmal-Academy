@@ -16,6 +16,7 @@ viewsRouter.get(
   "/twoFactorLogin",
   catchAsync(new ViewsController().renderTwoFactorLogin)
 );
+viewsRouter.get("/logout", catchAsync(new ViewsController().logout));
 viewsRouter.get(
   "/forgetPassword",
   catchAsync(new ViewsController().renderForgetPassword)

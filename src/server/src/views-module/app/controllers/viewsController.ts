@@ -16,6 +16,10 @@ export class ViewsController {
     response.render("twoFactorLogin.ejs");
   }
 
+  async logout(request: Request, response: Response) {
+    response.render("logout.ejs");
+  }
+
   async renderForgetPassword(request: Request, response: Response) {
     response.render("forgetPassword.ejs");
   }

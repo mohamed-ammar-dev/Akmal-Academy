@@ -109,6 +109,7 @@ export class UserAuthController {
   async logout(request: Request, response: Response) {
     response.clearCookie("user");
     response.clearCookie("token");
+    response.clearCookie("isAuth");
 
     sendResponse(response);
   }

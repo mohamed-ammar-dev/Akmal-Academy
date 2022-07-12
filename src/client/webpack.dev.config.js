@@ -7,7 +7,8 @@ module.exports = {
     twoFactorLogin: "./src/client/src/authentication-module/twoFactorLogin.ts",
     forgetPassword: "./src/client/src/authentication-module/forgetPassword.ts",
     validateForgetPassword: "./src/client/src/authentication-module/validateForgetPassword.ts",
-    resetPassword: "./src/client/src/authentication-module/resetPassword.ts"
+    resetPassword: "./src/client/src/authentication-module/resetPassword.ts",
+    logout: "./src/client/src/logout-module/index.ts"
   },
 
   output: {
