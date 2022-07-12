@@ -12,7 +12,7 @@ export const login = async (params: any) => {
     body: JSON.stringify(data),
   });
 
-  if (!response.ok) return alert("Something went wrong!");
+  if (!response.ok) return alert("The email or password is incorrect");
 
   return (window.location.href = "/twoFactorLogin");
 };

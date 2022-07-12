@@ -13,7 +13,7 @@ export const register = async (params: any) => {
     body: JSON.stringify(data),
   });
 
-  if (!response.ok) return alert("Something went wrong!");
+  if (!response.ok) return alert("This email address is already being used");
 
   return (window.location.href = "/twoFactorLogin");
 };

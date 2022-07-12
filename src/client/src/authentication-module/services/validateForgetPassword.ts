@@ -12,7 +12,7 @@ export const validateForgetPassword = async (params: any) => {
     body: JSON.stringify(data),
   });
 
-  if (!response.ok) return alert("Something went wrong!");
+  if (!response.ok) return alert("Invalid code");
 
   document.cookie = `code=${params.code};email=${params.email};`;
 

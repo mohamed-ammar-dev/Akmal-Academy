@@ -11,7 +11,7 @@ export const twoFactorLogin = async (params: any) => {
     body: JSON.stringify(data),
   });
 
-  if (!response.ok) return alert("Something went wrong!");
+  if (!response.ok) return alert("Invalid code");
 
   return (window.location.href = "/playlists/me");
 };
