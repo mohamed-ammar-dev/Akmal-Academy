@@ -10,6 +10,13 @@ export class UserRepo extends BaseRepo implements IUserRepo {
     super(UserModel);
   }
 
+  async getMyToken(userId: number) {
+    return await this.findOne!({
+      condition: { id: userId },
+      attributes: ["token"],
+    });
+  }
+
   async findByEmailForLogin(email: string) {
     return await this.findOne!({
       condition: { email: email.toLowerCase() },

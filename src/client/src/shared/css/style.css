@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 :root {
     --mainTextColor: #52565b;
     --primary: #2977c9;
@@ -23,7 +22,7 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.5;
     color: var(--mainTextColor);
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -41,6 +40,20 @@ h4,
 h5,
 .h5,
 h6,
+.h6 {
+    /* margin-top: 0;
+    margin-bottom: 0.5rem; */
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
 .h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -61,6 +74,7 @@ h6,
         Arial,
         sans-serif;
 }
+
 .subheading {
     text-transform: uppercase;
     font-weight: 700;
@@ -70,6 +84,7 @@ h6,
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
+
 #cover_title {
     font-weight: 600;
     color: #fff;
@@ -84,10 +99,6 @@ h6,
 #cover_text {
     margin-top: 6rem;
     padding: 3rem;
-}
-
-#playlist{
-    margin-top: 3rem
 }
 
 #section_1 {
@@ -206,6 +217,17 @@ input[type="color"]:focus,
 .list-group-item.active {
     background-color: var(--primary);
     border-color: var(--primary);
+    color: white;
+}
+
+.list-group-item.active span {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.list-group-item:hover span {
+    color: white;
 }
 
 .list-group-item:first-child {
@@ -227,6 +249,11 @@ input[type="color"]:focus,
 .list-group-item-action:hover {
     background-color: var(--primary);
     color: white;
+}
+
+.list-group-item-title:first-child {
+    min-width: auto;
+    border-bottom: 1px solid lightgray !important;
 }
 
 
@@ -507,28 +534,12 @@ input[type="color"]:focus,
     border-bottom-left-radius: 57px;
 }
 
-.acca {
+.loading-omd {
     background-color: #f0f0f0 !important;
     background-image: url(https://ams03pap001files.storage.live.com/y4mJt-DmEjzufBLay-_BUoIWOmOEgr1ACgG17mtQQlG4IgylAcgq94eqebWfbrAwLHoF3GYi2Aeb2KXX5wcjgpgFjxsExbZAYVEeeU7N8Vuvp7yAMu4Z2YPrpAq45yHrlG3SwHM9g_6Gcq9r_BnRUFBGpMSq6fRKZrGgbbhx36c6wmt2Q9MyF5drw8LQqlAo9BJcDqp3El1maPfLg-j35zHmA/1.png?psid=1&width=621&height=621&cropMode=center);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-}
-
-.cma {
-    background-color: #f0f0f0 !important;
-    background-image: url(https://wagacademy.net/wp-content/uploads/2021/10/m226qAAoRjK5eD7dI3Gb_cma-1.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-}
-
-.ifrs {
-    background-color: #f0f0f0 !important;
-    background-image: url(https://wagacademy.net/wp-content/uploads/2021/10/bi-ifrs.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 90%;
 }
 
 .img-block-asp-om {
@@ -707,7 +718,7 @@ input[type="color"]:focus,
     left: 0;
     height: 100%;
     width: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
     z-index: 1;
 }
 
@@ -718,7 +729,7 @@ input[type="color"]:focus,
     right: 0;
     height: 100%;
     width: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
     z-index: 1;
 }
 
@@ -1138,6 +1149,16 @@ span {
     margin-left: auto;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .services_Vector_Img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 37px;
+    }
+}
+
 .vector_Login {
     width: 66%;
     display: block;
@@ -1200,6 +1221,176 @@ span {
     ;
 }
 
+/* start our courses section */
+@media (min-width: 62.5em) {
+    .tns-item {
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 37.5em) {
+    .tns-item {
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 37.5em) {
+    .tns-item {
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 37.5em) {
+    .tns-item {
+        padding-right: 20px;
+    }
+}
+
+.tns-item {
+    width: calc(6.25%);
+}
+
+.tns-item {
+    font-size: 16px;
+}
+
+.tns-item {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.tns-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.courses {
+    width: 100%;
+    background: #fff;
+    padding: 30px 30px 40px 30px;
+    margin-bottom: 20px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tns-item {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.courses .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.courses .text {
+    width: calc(100% - 80px);
+    padding-left: 20px;
+}
+
+.courses .text h2,
+.courses .text .h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.courses .text p.rate {
+    margin-bottom: 5px;
+}
+
+.courses .text p.rate span {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.fa-star:before {
+    content: "\f005";
+}
+
+.courses .text .author-wrap .img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.courses .text .author-wrap span.author {
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.courses .text p.lec {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.courses .course-price {
+    color: var(--primary);
+}
+
+.courses .course-price span {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.btn.btn-primary.btn-outline-primary {
+    border: 1px solid var(--primary) !important;
+    background: transparent !important;
+    color: var(--primary) !important;
+}
+
+.btn.btn-primary.btn-outline-primary:hover {
+    border: 1px solid transparent !important;
+    background: var(--primary) !important;
+    color: #fff !important;
+}
+
+/* end our courses section */
+
+/* start reviews section */
+.testimony-wrap {
+    display: block;
+    position: relative;
+    background: white;
+    padding: 35px 30px 30px 30px !important;
+    width: 98%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 5px 12px -9px rgb(0 0 0 / 17%);
+    -moz-box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 5px 12px -9px rgb(0 0 0 / 17%);
+}
+
+.testimony-wrap .user-img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.testimony-wrap .icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.testimony-wrap .icon span {
+    color: #fff;
+}
+
+/* end reviews section */
+
 /* index page  end*/
 
 /* playlist page */
@@ -1252,8 +1443,49 @@ span {
 }
 
 .title a,
-span {
+.title span {
     text-decoration: none;
     color: rgb(96, 96, 96);
     font-size: 14px;
 }
+
+/* Animate Text start */
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    height: 59px;
+    width: 246px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 0%;
+    bottom: 18%;
+    left: 43%;
+    right: 7%;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .console-container {
+        top: 0%;
+        bottom: 8%;
+        left: 10%;
+        right: 7%;
+    }
+}
+
+/*Animate text End*/

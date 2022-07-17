@@ -95,6 +95,11 @@ export class UserAuthCoreService implements IUserAuthCoreService {
       role: ROLE_TYPE.USER,
     });
 
+    await this.userRepo.update!({
+      condition: { id: user.id! },
+      update: { token: accessToken },
+    });
+
     return accessToken;
   }
 
@@ -163,6 +168,10 @@ export class UserAuthCoreService implements IUserAuthCoreService {
       condition: { id: user.id },
       update: { password },
     });
+  }
+
+  async getMyToken(userId: number) {
+    return await this.userRepo.getMyToken(userId);
   }
 
   async resetCounters() {

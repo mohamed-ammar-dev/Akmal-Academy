@@ -81,7 +81,11 @@ export class ViewsController {
     response.render("aboutUs.ejs");
   }
 
-  // async renderPolicy(request: Request, response: Response) {
-  //   response.render("policy.ejs");
-  // }
+  async renderPolicy(request: Request, response: Response) {
+    response.render("policy.ejs");
+  }
+
+  async renderTerms(request: Request, response: Response) {
+    response.render("terms.ejs");
+  }
 }

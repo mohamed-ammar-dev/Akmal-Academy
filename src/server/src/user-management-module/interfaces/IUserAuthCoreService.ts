@@ -10,4 +10,5 @@ export interface IUserAuthCoreService {
     newPassword: string;
   }): any;
   resetCounters(): Promise<void>;
+  getMyToken(userId: number): Promise<{ token: string }>;
 }

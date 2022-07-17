@@ -58,6 +58,7 @@ viewsRouter.get(
 viewsRouter.get("/services", catchAsync(new ViewsController().renderServices));
 
 viewsRouter.get("/aboutUs", catchAsync(new ViewsController().renderAboutUs));
-// viewsRouter.get("/policy", catchAsync(new ViewsController().renderPolicy));
+viewsRouter.get("/policy", catchAsync(new ViewsController().renderPolicy));
+viewsRouter.get("/terms", catchAsync(new ViewsController().renderTerms));
 
 export { viewsRouter };

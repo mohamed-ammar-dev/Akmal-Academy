@@ -34,6 +34,10 @@ const UserModel = sequelize.define<Model>(
       type: DataTypes.INTEGER,
       defaultValue: 1,
     },
+
+    token: {
+      type: DataTypes.TEXT,
+    },
   },
   {
     freezeTableName: true,
